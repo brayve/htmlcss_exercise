@@ -1,0 +1,33 @@
+h1 {
+    background-color:red;
+    padding:10px;
+}
+
+#myid {
+    background-color:yellow;
+    padding:5px;
+}
+
+.myclass {
+    background-color:pink;
+    padding:5px;
+}
+
+p {
+    border:1px solid black;
+    padding:5px;
+}
+
+p.classParagraph {
+    background-color:lightblue;
+    border:none;
+    padding:5px;
+}
+
+a::before {
+    content:"Ich bin ein ";
+}
+
+a:hover {
+    background-color:grey;
+}

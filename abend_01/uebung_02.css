@@ -1,0 +1,40 @@
+*, :before, :after {
+    box-sizing: border-box;
+  }
+  
+  header {
+    height: 200px;
+    background-color: yellow;
+    padding:20px;
+  }
+  
+  main, aside {
+    height: 500px;
+    padding:20px;
+  }
+  
+  main {
+    background-color: pink;
+    width: 80%;
+    float: left;
+    padding:20px;
+  }
+  
+  aside {
+    background-color: red;
+    width: 20%;
+    float: left;
+    padding:20px;
+  }
+  
+  footer {
+    height: 100px;
+    background-color: lightgrey;
+    padding:20px;
+  }
+  
+  .clearfix:after {
+    content:"";
+    display:table;
+    clear: both;
+  }
