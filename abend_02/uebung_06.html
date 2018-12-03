@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" type="text/css" href="uebung_06.css">
+</head>
+<body>
+
+<div class="wrapper">
+<div class="Grid">
+
+<div class="Grid-Cell">
+    <h2>Add-on Prepended</h2>
+    <div class="InputAddOn">
+        <span class="InputAddOn-item">Search</span>
+        <input class="InputAddOn-field">
+    </div>
+    <div class="InputAddOn">
+        <span class="InputAddOn-item">Go</span>
+        <input class="InputAddOn-field">
+    </div>
+</div>
+
+<div class="Grid-Cell">
+    <h2>Add-on Appended</h2>
+    <div class="InputAddOn">
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item"><i data-feather="search"></i></button>
+    </div>
+    <div class="InputAddOn">
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item"><i data-feather="log-in"></i></button>
+    </div>
+</div>
+
+</div>
+      
+<h2>Appended and Prepended Add-ons</h2>
+<div class="Grid-Cell-both">
+    <div class="InputAddOn">
+        <span class="InputAddOn-item">Send</span>
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item"><i data-feather="send"></i></button>
+    </div>
+
+    <div class="InputAddOn">
+        <span class="InputAddOn-item">Encrypt</span>
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item"><i data-feather="lock"></i></button>
+    </div>
+</div>
+</div>
+
+<script>
+    feather.replace()
+</script>
+
+</body>
+</html>

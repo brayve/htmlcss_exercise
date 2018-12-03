@@ -1,0 +1,44 @@
+body {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap:wrap;
+  }
+  
+  header {
+    background: pink;
+    padding: 30px;
+    height:100px;
+    width:100%;
+  }
+    
+  nav {
+    background: brown;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-basis: 20%;
+    height:500px;
+  }
+
+  main {
+    background: lightgrey;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-grow: 1;
+  }
+
+  aside {
+    background: grey;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-basis: 20%;
+  }
+  
+  footer {
+    background: yellow;
+    padding: 30px;
+    height:100px;
+    width:100%;
+  }

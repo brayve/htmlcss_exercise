@@ -1,0 +1,78 @@
+body {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: pink;
+    padding: 30px;
+    height:40px;
+  }
+  
+  nav {
+    background: brown;
+    box-sizing: border-box;
+    padding: 30px;
+    height:70px;
+  }
+
+  main {
+    background: lightgrey;
+    box-sizing: border-box;
+    padding: 30px;
+    height:450px;
+    order:1;
+  }
+
+  aside {
+    background: grey;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  footer {
+    background: yellow;
+    padding: 30px;
+    height:40px;
+    order:1;
+  }
+
+@media screen and (min-width: 768px) {
+  
+  body {
+      background-color: lightblue;
+  }
+    
+  .content {
+      flex-direction: row;
+  }
+
+  header {
+    height:100px;
+  }
+
+  nav {
+    height:500px;
+    flex-basis: 20%;
+  }
+
+  main {
+    height:500px;
+    flex-grow:1;
+    order:0;
+  }
+
+  aside {
+    flex-basis: 20%;
+  }
+  
+  footer {
+    height:100px;
+    order:0;
+  }
+
+}

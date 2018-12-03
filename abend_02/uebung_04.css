@@ -1,0 +1,19 @@
+body {
+    font-size: 1.5em;
+  }
+
+table {
+    width:100%;
+    height:800px;
+    background-color:yellow;
+}
+
+td {
+    width:30.333%;
+    height:100px;
+}
+
+.centered {
+    background-color:pink;
+    padding:20px;
+}
