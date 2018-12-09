@@ -1,0 +1,42 @@
+/*Create a simple grid with 3 rows and 3 columns that are 150x150px each.*/
+/*Lay out different items on your grid and get comfy with how it works!*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+    grid-template-areas: 
+    "item1 item1 item1"
+    "item3 item2 item4"
+    "item5 item5 item4";
+    grid-gap:10px;
+}
+
+.item1 {
+    background-color:red;
+    grid-area:item1;
+}
+
+.item2 {
+    background-color:green;
+    grid-area:item2;
+}
+
+.item3 {
+    background-color:yellow;
+    grid-area:item3;
+}
+
+.item4 {
+    background-color:pink;
+    grid-area:item4;
+}
+
+.item5 {
+    background-color:blue;
+    grid-area:item5;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    padding:10px;
+}
