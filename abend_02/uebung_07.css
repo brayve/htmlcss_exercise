@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    margin:0 auto;
+    max-width:900px;
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.content {
+    flex: 1;
+  }
+
+.site__header {
+  height:100px;
+  padding: 10px;
+  background-color:mistyrose;
+}
+
+.site__footer {
+    flex:1;
+    padding: 10px;
+    background-color:lightblue;
+}
+
+.content__box {
+    padding:20px;
+    background-color:lightgrey;
+}
+
+.content__text {
+    padding: 20px 0px 20px 0px;
+}
