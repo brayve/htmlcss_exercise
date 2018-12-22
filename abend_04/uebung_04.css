@@ -1,0 +1,19 @@
+/* Create a <div> that is 250x250px and is position: absolute;
+Lets build a simple javascript to add a class to your element on click
+Make the element transition when you click it */
+
+.item {
+    width:250px;
+    height:250px;
+    background-color:pink;
+    padding:20px;
+    position: absolute;
+    left:200px;
+    top:200px;
+    transition: all 0.5s ease;
+  }
+  
+  .item-click {
+    background-color: red;
+    transform: scale(1.2);
+  }

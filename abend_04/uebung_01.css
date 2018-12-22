@@ -1,0 +1,96 @@
+/*Create a button that has a cool transition when you :hover it with your mouse cursor
+Play around with different properties (e.g. background-color, border,  border-radius, opacity)
+*/
+.wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto; /* oben und unten / links und rechts */
+}
+
+.btn {
+    width:200px;
+    height:100px;
+    margin:50px;
+    border:none;
+}
+
+.btn1 {
+    background-color:coral;
+    transition: all 0.5s ease-out;
+}
+
+.btn1:hover {
+    background-color:red;
+    transform: rotate(90deg);
+}
+
+.btn2 {
+    background-color:lightblue;
+    transition: all 0.3s ease;
+}
+
+.btn2:hover {
+    transform: rotateY(0.5turn);
+}
+
+.btn3 {
+    background-color:pink;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn3:hover {
+    box-shadow: 1px 1px 10px darkgrey;
+    transform: scale(1.2);     
+}
+
+.btn4 {
+    background:linear-gradient(to right, lime, yellow);
+    transition: all 1s cubic-bezier(.21,.36,.59,.97);
+}
+
+.btn4:hover {
+    background:linear-gradient(to right, yellow, lime);     
+}
+
+.btn5 {
+    background-color:white;
+    border: 1px solid lightgrey;
+    transition: all 0.1s ease;
+}
+
+.btn5:hover {
+    border-top-right-radius:  20px; 
+    border:1px solid turquoise;
+}
+
+.btn6 {
+    background-color:lightgrey;
+    opacity: 0.5;
+    transition: all 0.1s ease;
+}
+
+.btn6:hover {
+    opacity: 1;
+}
+
+.btn7 {
+    background-color:olive;
+    color:white;
+    transition: all 0.1s ease-out;
+}
+
+.btn7:hover {
+    transform: skewX(15deg);
+    transform: skewY(10deg);
+    transform: skew(10deg, 10deg);
+}
+
+.btn8 {
+    background-color:rosybrown;
+    color:white;
+    transition: all 0.1s ease-out;
+}
+
+.btn8:hover {
+    transform: translate(10px, 10px);
+}

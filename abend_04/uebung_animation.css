@@ -1,0 +1,13 @@
+body { 
+    text-align: center;   
+  }
+    
+.heart {
+    margin-top:400px;
+    animation: beat .30s infinite alternate;
+    /*transform-origin: center;*/
+  }
+  
+@keyframes beat {
+    to { transform: scale(1.4); }
+  }

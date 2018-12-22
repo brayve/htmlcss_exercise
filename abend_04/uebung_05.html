@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="uebung_05.css">
+</head>
+<body>
+
+<div class="item">Click me</div>
+
+<script>
+/*Extend the javascript, add a “transitionend” event listener to the element 
+and make it show a box that says “Transition done”*/
+
+var item = document.querySelector('.item');
+  
+item.addEventListener('click', function() {
+  item.classList.toggle('item-click');
+});
+
+/* ist dasselbe wie
+
+item.addEventListener('click', makeClick);
+  
+function makeClick() {
+  item.classList.toggle('item-click');
+}
+*/
+
+item.addEventListener('transitionend', function() {
+    alert('Transition done');
+});
+
+</script>
+
+</body>
+</html>

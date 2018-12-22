@@ -1,0 +1,36 @@
+/* Create a <div> that is 250x250px and is position: absolute;
+Make the element move and rotate when you :hover it with your mouse-cursor, 
+but with multiple different properties. Play around with the delays and durations.
+*/
+
+.item {
+    width:250px;
+    height:250px;
+    background-color:pink;
+    padding:10px;
+    margin:100px 100px;
+    position: absolute;
+    transition: all 0.4s cubic-bezier(.07,1.05,.88,.64) 0.3s;
+}
+
+.item:hover {
+    background-color:red;
+    transform: rotateX(0.5turn);
+    left:30px;
+}
+
+.item2 {
+    width:250px;
+    height:250px;
+    background-color:lightblue;
+    padding:10px;
+    margin: 100px 500px;
+    position: absolute;
+    transition: transform 1.2s ease-in-out;
+}
+
+.item2:hover {
+    background-color:blue;
+    transform: rotate(180deg);
+    right:450px;
+}

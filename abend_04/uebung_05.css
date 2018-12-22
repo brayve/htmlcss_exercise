@@ -1,0 +1,18 @@
+/*Extend the javascript, add a “transitionend” event listener to the element 
+and make it show a box that says “Transition done”*/
+
+.item {
+    width:250px;
+    height:250px;
+    background-color:pink;
+    padding:20px;
+    position: absolute;
+    left:200px;
+    top:200px;
+    transition: all 0.5s ease;
+  }
+  
+  .item-click {
+    background-color: red;
+    transform: scale(1.2);
+  }
