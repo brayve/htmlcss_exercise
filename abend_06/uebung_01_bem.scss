@@ -1,0 +1,106 @@
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/figures";
+
+body {
+    font-size: $fixed-size-regular;
+    font-family: $fixed-font-family;
+    margin:0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+  
+ .header {
+    background: $pink;
+    padding: 30px;
+    grid-area:header;
+
+    &__logo {
+        background-color: $purple;
+        padding:20px;
+        width:120px;
+        height:70px;
+    }
+  }
+    
+.nav {
+    background: $brown;
+    padding: 30px;
+    grid-area: nav;
+
+    &__items {
+        background-color: $beige;
+        padding:10px;
+        list-style-type:none;
+
+        &--inactive {
+            background-color:$coral;
+            padding:10px;
+        }
+            
+        &--active {
+            background-color:$turquoise;
+            padding:10px;
+        }
+    }
+  }
+
+.main {
+    background: $lightgrey;
+    padding: 30px;
+    grid-area:main;
+
+    &__text {
+        background-color:$primary-color;
+        color:$secondary-color;
+        padding:30px;
+        margin:10px;
+    }
+    
+    &__img {
+        background-color: $purple;
+        padding:30px;
+        margin:10px;
+        width:$image-width;
+        height:$image-height;
+    }
+
+    &__button {
+        background-color: $green;
+
+        &:hover {
+            background-color: lighten($green, 40%);
+        }
+    }
+  }
+
+.aside {
+    background-color: lighten($primary-color, 50%);
+    padding: 30px;
+    grid-area:aside;
+
+    &__img {
+        background-color: $purple;
+        padding: 30px;
+        width:$image-width;
+        height:$image-height;
+    }
+    
+    &__title {
+        color:$secondary-color;
+    }
+}
+  
+footer {
+    background-color: $yellow;
+    padding: 30px;
+    grid-area:footer;
+  }
