@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*Optimale Lösung mittels sogenannter Sass Map (ähnlich wie Array)
+Verwendung von map-has-key & map-get (Funktionen, welche Sass zur Verfügung stellt)
+Vorteil: Anzahl Breakpoints flexibel, 
+Mixin kann universal eingesetzt werden und 
+mittels der $breakpoints
+Variable konfiguriert werden*/
+.foo {
+  background-color: lightblue; }
+  @media screen and (min-width: 768px) {
+    .foo {
+      background-color: orange; } }
+  @media screen and (min-width: 1024px) {
+    .foo {
+      background-color: pink; } }

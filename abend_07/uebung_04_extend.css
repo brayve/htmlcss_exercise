@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*Erstelle ein Placeholder für dein vielfach benutztes clearfix-Schnipsel
+Verwende nun anstelle von <div class=”foo clearfix”></div> im HTML-Code 
+den Extend bei der Deklaration der Regeln für .foo {} im CSS.*/
+.foo {
+  content: "";
+  display: table;
+  clear: both; }
+
+.foo {
+  background-color: pink;
+  width: 100px;
+  height: 50px; }
+
+.span2 {
+  background-color: lightblue;
+  /*funktioniert nur bei .foo
+    width:100px;
+    height:50px;*/ }

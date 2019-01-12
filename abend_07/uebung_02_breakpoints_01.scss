@@ -1,0 +1,30 @@
+/*Nachteil dieser Variante: nicht universal einsetzbar.
+Anzahl Breakpoints limitiert auf 3, sonst muss man es erweitern.*/
+
+@mixin up($viewport) {
+    @if $viewport ==  'tablet' {
+      @media screen and (min-width: 768px) {
+        @content;
+      }
+    } @else if $viewport == 'desktop' {
+      @media screen and (min-width: 1024px) {
+        @content;
+      }
+    } @else if $viewport == 'tv' {
+      @media screen and (min-width:1440px) {
+        @content;
+      }
+    }
+  }
+  
+.foo {
+  background-color:pink;
+
+    @include up(tablet) {
+        background-color:red;
+    }
+
+    @include up(desktop) {
+      background-color:orange;
+    }
+  }

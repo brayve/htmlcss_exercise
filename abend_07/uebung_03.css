@@ -1,0 +1,56 @@
+.awesome-triangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid lightblue;
+  margin-bottom: 50px; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid pink;
+  margin-bottom: 30px; }
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid orange; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid brown; }
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid yellow; }
+
+/* Verwendung des Dreiecks innerhalb einer Box mithilfe von before-Pseudo-Element
+wie z.B. Sprechblase/Kommentar */
+.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: red;
+  margin-bottom: 30px; }
+  .box:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid red; }

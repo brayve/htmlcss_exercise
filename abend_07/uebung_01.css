@@ -1,0 +1,16 @@
+.foo {
+  -webkit-border-radius: 2px solid red;
+  -moz-border-radius: 2px solid red;
+  -ms-border-radius: 2px solid red;
+  -o-border-radius: 2px solid red;
+  border-radius: 2px solid red; }
+
+/*Bei .foo border-radius ($property) mit Komma von Wert ($value) trennen.*/
+.test {
+  -webkit-transition: border-radius 10s ease-out;
+  -moz-transition: border-radius 10s ease-out;
+  -ms-transition: border-radius 10s ease-out;
+  -o-transition: border-radius 10s ease-out;
+  transition: border-radius 10s ease-out; }
+
+/*Bei .test ohna Komma, da es nur einen Wert ($wert) hat.*/

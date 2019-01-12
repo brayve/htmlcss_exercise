@@ -1,0 +1,11 @@
+/*Breakpoints sind als Variablen hinterlegt
+Anzahl Breakpoints limitiert auf 3, sonst muss man es erweitern.*/
+.foo {
+  background-color: lightblue;
+  border: 1px solid red; }
+  @media screen and (max-width: 767px) {
+    .foo {
+      border: 1px solid blue; } }
+  @media screen and (min-width: 768px) {
+    .foo {
+      background-color: orange; } }

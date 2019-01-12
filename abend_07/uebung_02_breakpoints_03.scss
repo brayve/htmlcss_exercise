@@ -1,0 +1,36 @@
+/*Optimale Lösung mittels sogenannter Sass Map (ähnlich wie Array)
+Verwendung von map-has-key & map-get (Funktionen, welche Sass zur Verfügung stellt)
+Vorteil: Anzahl Breakpoints flexibel, 
+Mixin kann universal eingesetzt werden und 
+mittels der $breakpoints
+Variable konfiguriert werden*/
+
+$breakpoints: (
+    smartphone: 576px,
+    tablet: 768px,
+    desktop: 1024px,
+    tv: 1440px,
+    werbetafel: 500000000px
+);
+
+@mixin up($size) {
+    @if map-has-key($breakpoints, $size) {
+        $size: map-get($breakpoints, $size);
+    }
+
+    @media screen and (min-width: #{$size}) {
+        @content;
+    }
+}
+
+.foo {
+    background-color:lightblue;
+
+    @include up(tablet) {
+        background-color:orange;
+    }
+
+    @include up(desktop) {
+        background-color:pink;
+    }
+}

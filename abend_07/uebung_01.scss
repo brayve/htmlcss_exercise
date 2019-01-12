@@ -1,0 +1,28 @@
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}:$value;    
+}
+
+.foo {
+   @include prefix(border-radius, 2px solid red);
+}
+
+/*Bei .foo border-radius ($property) mit Komma von Wert ($value) trennen.*/
+
+
+@mixin prefix($wert) {
+    -webkit-transition: $wert;
+    -moz-transition: $wert;
+    -ms-transition: $wert;
+    -o-transition: $wert;
+    transition: $wert;
+}
+
+.test {
+   @include prefix(border-radius 10s ease-out); 
+}
+
+/*Bei .test ohna Komma, da es nur einen Wert ($wert) hat.*/
