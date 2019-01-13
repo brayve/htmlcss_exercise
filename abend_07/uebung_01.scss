@@ -7,7 +7,12 @@
 }
 
 .foo {
-   @include prefix(border-radius, 2px solid red);
+    background-color:lightblue;
+
+    &:hover {
+        @include prefix(transition, all 0.3s linear);
+        background-color:red;
+    }
 }
 
 /*Bei .foo border-radius ($property) mit Komma von Wert ($value) trennen.*/
@@ -22,7 +27,12 @@
 }
 
 .test {
-   @include prefix(border-radius 10s ease-out); 
+    background-color:orange;
+
+    &:hover {
+        @include prefix(all 0.3s linear); 
+        background-color:blue;
+    }
 }
 
 /*Bei .test ohna Komma, da es nur einen Wert ($wert) hat.*/
